@@ -25,9 +25,11 @@ Current supported features are:
   - ISIS metric (auto or manual)
   - MSTP bridge priority
   - NNI MLT support (2 MLTs per switch)
+  - NTP server (2) support
   - Segmented management for CLIP, VLAN and OoB
   - SLPP setup (slpp-guard or slpp-packet-rx)
   - SNMP basics (sysLocation, sysContact)
+  - Syslog host support
   - TransferHost setup
   - VLACP on NNI
 

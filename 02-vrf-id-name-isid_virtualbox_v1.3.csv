@@ -1,0 +1,6 @@
+VRF-id,VRF-Name,L3VSN-I-sid,Remark,IP-VPN,MultiCast-VPN,Redist-Direct,Redist-Static
+0,GRT,,,Yes,Yes,Yes,Yes
+2,red,302,,Yes,Yes,Yes,Yes
+3,orange,303,,Yes,Yes,Yes,Yes
+4,yellow,304,,Yes,yes,Yes,Yes
+5,green,305,,Yes,Yes,Yes,Yes

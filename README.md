@@ -46,5 +46,16 @@ Current supported features are:
   - VRRP (2 instances per VLAN)
   - Wake on LAN (directed broadcast)
 
-  - 
+  04 VRF circuitless IP addresses (12 switches per sheet)
+  - VRF circuitless IP address
+  
+  05 Interface configuration (VLAN/I-SID assignments)
+  - Fabric Attach support (with or without mgmt VLAN)
+  - Interface name and description
+  - Interface/switch migration documentation support
+  - LACP (long or short timers) and 802.3ad static support
+  - SMLT support (VLANid check build-in)
+  - SNMP linktrap
+  - Tagging (802.1Q)
+  - VLAN list support (with dashes)
 

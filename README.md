@@ -16,7 +16,7 @@ For the setup of switch Clusters (IST/vIST); two options are supported:
 
 Current supported features are:
   
-  01 SPBm paramaters:
+  01 SPBm parameters:
   - Cluster setup (SPB switch, DVR CTRL and DVR LEAF)
   - external banner file (01-banner.txt)
   - external motd file (01-motd.txt)

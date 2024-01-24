@@ -59,5 +59,6 @@ Current supported features are:
   - SMLT support (VLANid check build-in)
   - SNMP linktrap
   - Tagging (802.1Q)
+  - UNI types supported are Switched-UNI (Flex-UNI) and C-VLAN UNI
   - VLAN list support (with dashes)
 

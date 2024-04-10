@@ -18,7 +18,7 @@ Switch-A,OrgSwitch,OrgInt,InterfaceName,SNMP LinkTrap,Transceiver,Tagging,FA/FA-
 1/17,,,MLT-170,yes,shut,yes,,,170,30,,,1/17,,,MLT-170,yes,shut,yes,,,170,30,
 1/18,,,MLT-180,yes,shut,no,,LACP-S,180,30,10-15,,1/18,,,MLT-180,yes,shut,no,,LACP-S,180,30,10-15
 1/19,,,MLT-190,yes,shut,no,FA,LACP-S,190,0,,,1/19,,,MLT-190,yes,shut,no,FA,LACP-S,190,0,
-1/20,,,MLT-200,yes,shut,no,FA-MGMT,LACP-S,200,0,10,,1/20,,,MLT-200,yes,shut,no,FA-MGMT,LACP-S,200,0,10
+1/20,,,MLT-200,yes,shut,yes,FA-MGMT,LACP-S,200,0,10,,1/20,,,MLT-200,yes,shut,yes,FA-MGMT,LACP-S,200,0,10
 1/21,,,MLT-210,yes,shut,no,FA-MGMT,LACP-S,210,0,10,,1/21,,,MLT-210,yes,shut,no,FA-MGMT,LACP-S,210,0,10
 1/22,,,MLT-221,yes,shut,yes,,,221,0,30-35,,1/22,,,MLT-222,yes,shut,yes,,,222,0,40-45
 1/23,,,MLT-221,yes,shut,yes,,,221,0,30-35,,1/23,,,MLT-222,yes,shut,yes,,,222,0,40-45

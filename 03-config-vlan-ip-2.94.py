@@ -358,7 +358,7 @@ with open (filename) as f:
 	ip_adr_msk = [x.decode() for x in ip_adr_msk]
 	ip_adr_msk = [x.strip(" ") for x in ip_adr_msk]
 	ip_adr_msk = [x.lower() for x in ip_adr_msk]
-	ip_adr_msk = [x.isspace() for x in ip_adr_msk]
+	# ip_adr_msk = [x.isspace() for x in ip_adr_msk]
 	print(ip_adr_msk)
 	print("\t**** ip multicast enable")
 	ip_mc__ena = [x.encode("ascii", "ignore") for x in ip_mc__ena]

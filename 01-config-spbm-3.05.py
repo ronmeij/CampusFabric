@@ -1,7 +1,7 @@
 ##########
 # Name: 		config-spbm.py
-# Vers:			3.04
-# Date: 		240324
+# Vers:			3.05
+# Date: 		240614
 # Auth: 		Ronald Meijer
 # Pyth: 		version 3
 # Dependency:	01_spbm_param_detail_TEMPLATE_v3.0

@@ -27,7 +27,7 @@ Current supported features are:
   - NNI MLT support (2 MLTs per switch)
   - NTP server (2) support
   - Segmented management for CLIP, VLAN and OoB
-  - SLPP setup (slpp-guard or slpp-packet-rx)
+  - SLPP setup (slpp-guard (timeout default 60s), slpp-guard-dis (timeout set to 0) or slpp-packet-rx values)
   - SNMP basics (sysLocation, sysContact)
   - Syslog host support
   - TransferHost setup
@@ -47,6 +47,11 @@ Current supported features are:
   - VLAN id, name, L2VSN and VRF
   - VRRP (2 instances per VLAN)
   - Wake on LAN (directed broadcast)
+  - If the field 'IP address' under the switch name is left empty the VLAN is created as L2-VSN
+  - If 'nocreate' instead 'IP address' is used the VLAN is not created on the switch
+  - If 'mc-config-lite' instead 'IP address' is used the VLAN is created for 'mc-config-lite'
+  - With 'd' before the IP netmask the IP interface is created in state-disabled
+  - A file is created with the required 'ip interface enable' commands
 
   04 VRF circuitless IP addresses (12 switches per sheet)
   - VRF circuitless IP address
@@ -59,6 +64,5 @@ Current supported features are:
   - SMLT support (VLANid check build-in)
   - SNMP linktrap
   - Tagging (802.1Q)
-  - UNI types supported are Switched-UNI (Flex-UNI) and C-VLAN UNI
   - VLAN list support (with dashes)
 

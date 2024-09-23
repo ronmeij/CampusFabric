@@ -18,12 +18,14 @@ Current supported features are:
   
   01 SPBm paramaters:
   - Cluster setup (SPB switch, DVR CTRL and DVR LEAF)
+  - DNS for NTP servers
   - external banner file (01-banner.txt)
   - external motd file (01-motd.txt)
   - ISIS hello authentication
   - ISIS loopback IP
   - ISIS metric (auto or manual)
   - MSTP bridge priority
+  - Multi-area support
   - NNI MLT support (2 MLTs per switch)
   - NTP server (2) support
   - Segmented management for CLIP, VLAN and OoB

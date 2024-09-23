@@ -1,0 +1,19 @@
+
+################################## ACME ####################################
+#           !! ATTENTION : Vous accedez a un materiel ACME             !!  #
+#  Vous avez besoin d'une autorisation explicite de l'autorite competente  #
+#  pour utiliser ce materiel, son utilisation est strictement limitee a ce #
+# qui est inscrit sur l autorisation. Tout acces non autorise vous expose  #
+#    a des poursuites judiciaires. Si vous comprenez ce message et avez    #
+#    l autorisation pour acceder a cet equipement connectez vous pour      #
+#     continuer. Si non, vous devez vous deconnecter immediatement.        #
+#--------------------------------- ACME -----------------------------------#
+#      !! WARNING : You have accessed a Computer system operated by !!     #
+#      !!                          ACME                             !!     #
+#   You are required to have an explicit authorization from the competent  #
+#   authorities before you use this system and you are strictly limited to #
+#    the use set out in that written authorization. Unauthorized access    #
+#   expose you to lawsuits. If you understand this message and have been   #
+#            authorized to use this. Please login to continue.             #
+#       Otherwise, you must disconnect from this session immediately.      #
+############################################################################

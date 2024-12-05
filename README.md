@@ -1,7 +1,7 @@
 # CampusFabric
 This project provides a way to generate configuration scripts for the setup of a complex Campus Fabric solution.
 
-The configuration is based on a modular approach; for each module a separate excel file (csv) is required.
+The configuration is based on a modular approach; for each module a separate excel file (xlsx) is required.
 There are 5 modules:
 - 01 SPBm parameters 
 - 02 VRF configuration settings

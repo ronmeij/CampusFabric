@@ -304,7 +304,7 @@ with open (filename) as f:
 		if row[0] is not None:
 			valid_rows.append(row)
 
-	print('XXXXXXX Nb valid rows=', len(valid_rows))
+	print('\n\tXXXXXXX Nb valid rows=', len(valid_rows))
 
 	for row in valid_rows:
 		try:
@@ -369,7 +369,7 @@ with open (filename) as f:
 			quit()
 	print("\n\n**** List data from Excel file:")
 
-	print("\t**** PromptName:")
+	print("\n\t**** PromptName:")
 	promptname = [x.strip(" ") for x in promptname]
 	print(promptname)
 	print("n\t**** ISIS-SysName:")

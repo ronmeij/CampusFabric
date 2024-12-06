@@ -154,11 +154,8 @@ with open (filename) as f:
 	#for header_row in sheet.iter_rows(min_row=header_row_index, values_only=True):
 		#header_row = next(reader)
 	header_row = [ cell.value for cell in sheet[header_row_index] if cell.value and str(cell.value).strip() ]
-	for index, column_header in enumerate(header_row):
-		print(index, "\t", column_header.strip())
-
-	print("\n\t**** INFORM The file " + filename + " was selected\n")
-	answer()
+	# for index, column_header in enumerate(header_row):
+		# print(index, "\t", column_header.strip())
 
 	for index, column_header in enumerate(header_row):
 		print(index, "\t" ,column_header.strip())
@@ -186,7 +183,11 @@ with open (filename) as f:
 			switch_idA = column_header.strip()
 		if int(39) == index:
 			switch_idB = column_header.strip()
+
+	print("\n\t**** INFORM The file " + filename + " was selected\n")
 	answer()
+	
+
 	dhcp_rel_1 = []
 	dhcp_rel_2 = []
 	dhcp_rel_3 = []
@@ -234,7 +235,7 @@ with open (filename) as f:
 		if row[0] is not None:
 			valid_rows.append(row)
 
-	print('XXXXXXX Nb valid rows=', len(valid_rows))
+	print('\n\tXXXXXXX Nb valid rows=', len(valid_rows))
 
 	for row in valid_rows:
 		try:
@@ -281,7 +282,7 @@ with open (filename) as f:
 			print("\n\n\t**** WARNING excel header not as expected!!!")
 			quit()
 	print("\n\n**** List data:")
-	print("\t**** dhcp-relay agent 1")
+	print("\n\t**** dhcp-relay agent 1")
 	dhcp_rel_1 = [x.encode("ascii", "ignore") for x in dhcp_rel_1]
 	dhcp_rel_1 = [x.decode() for x in dhcp_rel_1]
 	dhcp_rel_1 = [x.strip(" ") for x in dhcp_rel_1]
@@ -489,6 +490,7 @@ with open (filename) as f:
 	vrrp2_prio = [x.decode() for x in vrrp2_prio]
 	vrrp2_prio = [x.strip(" ") for x in vrrp2_prio]
 	print(vrrp2_prio)
+	print("\nInput data was correctly parsed from the Excel file\n")
 answer()
 lendhcp_rel_1 = len(dhcp_rel_1)
 lendhcp_rel_2 = len(dhcp_rel_2)

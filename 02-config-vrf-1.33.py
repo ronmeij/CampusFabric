@@ -107,7 +107,7 @@ with open (filename) as f:
 		if row[0] is not None:
 			valid_rows.append(row)
 
-	print('XXXXXXX Nb valid rows=', len(valid_rows))
+	print('\n\tXXXXXXX Nb valid rows=', len(valid_rows))
 
 	for row in valid_rows:
 		try:
@@ -121,42 +121,54 @@ with open (filename) as f:
 		except IndexError:
 			print("\n\n\t**** WARNING excel header not as expected!!!")
 			quit()
+	print("\n\n**** List data from Excel file:")
+
+	print("\n\t**** VRFid:")
 	vrf_____id = [x.strip(" ") for x in vrf_____id]
 	print(vrf_____id)
+	print("\n\t**** VRF name:")
 	vrf___name = [x.strip(" ") for x in vrf___name]
 	print(vrf___name)
+	print("\n\t**** L3-VSN:")
 	vrf___isid = [x.strip(" ") for x in vrf___isid]
 	print(vrf___isid)
+	print("\n\t**** IPVPN:")
 	vrf__ipvpn = [x.strip(" ") for x in vrf__ipvpn]
 	vrf__ipvpn = [x.lower() for x in vrf__ipvpn]
 	print(vrf__ipvpn)
+	print("\n\t**** Multicast VPN:")
 	vrf___mvpn = [x.strip(" ") for x in vrf___mvpn]
 	vrf___mvpn = [x.lower() for x in vrf___mvpn]
 	print(vrf___mvpn)
+	print("\n\t**** Redistribute direct:")
 	rdstr__dir = [x.strip(" ") for x in rdstr__dir]
 	rdstr__dir = [x.lower() for x in rdstr__dir]
 	print(rdstr__dir)
+	print("\n\t**** Redistribute static:")
 	rdstr_stat = [x.strip(" ") for x in rdstr_stat]
 	rdstr_stat = [x.lower() for x in rdstr_stat]
 	print(rdstr_stat)
-answer()
-lenvrf_____id = len(vrf_____id)
-lenvrf___name = len(vrf___name)
-lenvrf___isid = len(vrf___isid)
-lenvrf__ipvpn = len(vrf__ipvpn)
-lenvrf___mvpn = len(vrf___mvpn)
-lenrdstr__dir = len(rdstr__dir)
-lenrdstr_stat = len(rdstr_stat)
-print(lenvrf_____id)
-print(lenvrf___name)
-print(lenvrf___isid)
-print(lenvrf__ipvpn)
-print(lenvrf___mvpn)
-print(lenrdstr__dir)
-print(lenrdstr_stat)
-answer()
-outfil = "02-out-vrf.cfg"
-print("\nThe name of the out-file is " + outfil + " \n")
+	print("\nInput data was correctly parsed from the Excel file\n")
+
+	answer()
+	lenvrf_____id = len(vrf_____id)
+	lenvrf___name = len(vrf___name)
+	lenvrf___isid = len(vrf___isid)
+	lenvrf__ipvpn = len(vrf__ipvpn)
+	lenvrf___mvpn = len(vrf___mvpn)
+	lenrdstr__dir = len(rdstr__dir)
+	lenrdstr_stat = len(rdstr_stat)
+	print(lenvrf_____id)
+	print(lenvrf___name)
+	print(lenvrf___isid)
+	print(lenvrf__ipvpn)
+	print(lenvrf___mvpn)
+	print(lenrdstr__dir)
+	print(lenrdstr_stat)
+	print("\n**** Number of switches in Excel file (all numbers above must be equal):\n")
+	answer()
+	outfil = "02-out-vrf.cfg"
+	print("\nThe name of the out-file is " + outfil + " \n")
 
 with open(outfil, 'w') as outfile:
 	outfile.write("\n\n")

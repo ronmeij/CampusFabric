@@ -94,11 +94,8 @@ with open (filename) as f:
 	#for header_row in sheet.iter_rows(min_row=header_row_index, values_only=True):
 		#header_row = next(reader)
 	header_row = [ cell.value for cell in sheet[header_row_index] if cell.value and str(cell.value).strip() ]
-	for index, column_header in enumerate(header_row):
-		print(index, "\t", column_header.strip())
-
-	print("\n\t**** INFORM The file " + filename + " was selected\n")
-	answer()
+	# for index, column_header in enumerate(header_row):
+		# print(index, "\t", column_header.strip())
 
 	for index, column_header in enumerate(header_row):
 		print(index, "\t" ,column_header.strip())
@@ -126,7 +123,10 @@ with open (filename) as f:
 			switch_idA = column_header.strip()
 		if int(14) == index:
 			switch_idB = column_header.strip()
+
+	print("\n\t**** INFORM The file " + filename + " was selected\n")
 	answer()
+
 	lpbkint_id = []
 	vrf___name = []
 	lpbck_ip_1 = []
@@ -150,7 +150,7 @@ with open (filename) as f:
 		if row[0] is not None:
 			valid_rows.append(row)
 
-	print('XXXXXXX Nb valid rows=', len(valid_rows))
+	print('\n\tXXXXXXX Nb valid rows=', len(valid_rows))
 
 	for row in valid_rows:
 		try:
@@ -173,52 +173,52 @@ with open (filename) as f:
 			print("\n\n\t**** WARNING excel header not as expected!!!")
 			quit()
 	print("\n\n**** List data:")
-	print("\t**** loopback interface id (2-256 and 1 is used for ISIS loopback)")
+	print("\n\t**** loopback interface id (2-256 and 1 is used for ISIS loopback):")
 	lpbkint_id = [x.strip(" ") for x in lpbkint_id]
 	print(lpbkint_id)
-	print("\t**** vrf name")
+	print("\t**** vrf name:")
 	vrf___name = [x.strip(" ") for x in vrf___name]
 	print(vrf___name)
-	print("\t**** loopback ip switch 1")
+	print("\t**** loopback ip switch 1:")
 	lpbck_ip_1 = [x.strip(" ") for x in lpbck_ip_1]
 	print(lpbck_ip_1)
-	print("\t**** loopback ip switch 2")
+	print("\t**** loopback ip switch 2:")
 	lpbck_ip_2 = [x.strip(" ") for x in lpbck_ip_2]
 	print(lpbck_ip_2)
-	print("\t**** loopback ip switch 3")
+	print("\t**** loopback ip switch 3:")
 	lpbck_ip_3 = [x.strip(" ") for x in lpbck_ip_3]
 	print(lpbck_ip_3)
-	print("\t**** loopback ip switch 4")
+	print("\t**** loopback ip switch 4:")
 	lpbck_ip_4 = [x.strip(" ") for x in lpbck_ip_4]
 	print(lpbck_ip_4)
-	print("\t**** loopback ip switch 5")
+	print("\t**** loopback ip switch 5:")
 	lpbck_ip_5 = [x.strip(" ") for x in lpbck_ip_5]
 	print(lpbck_ip_5)
-	print("\t**** loopback ip switch 6")
+	print("\t**** loopback ip switch 6:")
 	lpbck_ip_6 = [x.strip(" ") for x in lpbck_ip_6]
 	print(lpbck_ip_6)
-	print("\t**** loopback ip switch 7")
+	print("\t**** loopback ip switch 7:")
 	lpbck_ip_7 = [x.strip(" ") for x in lpbck_ip_7]
 	print(lpbck_ip_7)
-	print("\t**** loopback ip switch 8")
+	print("\t**** loopback ip switch 8:")
 	lpbck_ip_8 = [x.strip(" ") for x in lpbck_ip_8]
 	print(lpbck_ip_8)
-	print("\t**** loopback ip switch 9")
+	print("\t**** loopback ip switch 9:")
 	lpbck_ip_9 = [x.strip(" ") for x in lpbck_ip_9]
 	print(lpbck_ip_9)
-	print("\t**** loopback ip switch 10")
+	print("\t**** loopback ip switch 10:")
 	lpbck_ip_0 = [x.strip(" ") for x in lpbck_ip_0]
 	print(lpbck_ip_0)
-	print("\t**** loopback ip switch 11")
+	print("\t**** loopback ip switch 11:")
 	lpbck_ip_A = [x.strip(" ") for x in lpbck_ip_A]
 	print(lpbck_ip_A)
-	print("\t**** loopback ip switch 12")
+	print("\t**** loopback ip switch 12:")
 	lpbck_ip_B = [x.strip(" ") for x in lpbck_ip_B]
 	print(lpbck_ip_B)
-	print("\t**** loopback interface name")
+	print("\t**** loopback interface name:")
 	lpbck_name = [x.strip(" ") for x in lpbck_name]
 	print(lpbck_name)
-
+	print("\nInput data was correctly parsed from the Excel file\n")
 answer()
 lenlpbkint_id = len(lpbkint_id)
 lenvrf___name = len(vrf___name)
@@ -358,7 +358,8 @@ switch_lib = {
 script = "\n ***** The complete library looks like: " + "\n"
 print(script)
 print(switch_lib)
-
+script = "\n ***** Building configuration files: " + "\n"
+print(script)
 answer()
 
 for key, value in switch_lib.items():

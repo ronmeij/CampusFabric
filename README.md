@@ -1,7 +1,7 @@
 # CampusFabric
 This project provides a way to generate configuration scripts for the setup of a complex Campus Fabric solution.
 
-The configuration is based on a modular approach; for each module a separate excel file (csv) is required.
+The configuration is based on a modular approach; for each module a separate excel file (xlsx) is required.
 There are 5 modules:
 - 01 SPBm parameters 
 - 02 VRF configuration settings
@@ -25,6 +25,7 @@ Current supported features are:
   - ISIS metric (auto or manual)
   - MSTP bridge priority
   - NNI MLT support (2 MLTs per switch)
+  - Multi-area support
   - NTP server (2) support
   - Segmented management for CLIP, VLAN and OoB
   - SLPP setup (slpp-guard (timeout default 60s), slpp-guard-dis (timeout set to 0) or slpp-packet-rx values)
@@ -40,7 +41,8 @@ Current supported features are:
 
   03 VLAN and IP settings (12 switches per sheet):
   - DHCP relay (4 agents)
-  - DVR (ip and oneIP)
+  - Anycast-gateway (IP and one-IP)
+  - DVR (IP and one-IP)
   - IGMP, multicast and multicast config-lite
   - OSPF passive interface
   - RSMLT (edge support)
